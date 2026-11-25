@@ -1,0 +1,22 @@
+[workspace]
+resolver = "3"
+members = [
+    "crates/pktscope-core",
+    "crates/pktscope-capture",
+    "crates/pktscope-app",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+authors = ["pktscope contributors"]
+
+[workspace.dependencies]
+pktscope-core = { path = "crates/pktscope-core" }
+pktscope-capture = { path = "crates/pktscope-capture" }
+etherparse = "0.17"
+libc = "0.2"
+thiserror = "2"
+eframe = "0.31"
+egui = "0.31"
